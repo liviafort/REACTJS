@@ -1,12 +1,23 @@
 import React from 'react'
 import ReactDOM  from 'react-dom/client'
 
-function PrimeiroComponente() {
-    return <h1>Meu primeiro componente</h1>
+function Componente1() {
+    return (
+        <div>
+            <h1>Meu primeiro componente</h1>
+        </div>
+    );
 }
 
-//A renderização do componente acontece pelo ReactDOM
 
+const Componente2 = () => {
+    return React.createElement('div',
+    {}, 
+    React.createElement('h2', {}, 'olá mundo'));
+}
+
+
+//A renderização do componente acontece pelo ReactDOM
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-root.render(<PrimeiroComponente />);
+root.render(<Componente2 />);
