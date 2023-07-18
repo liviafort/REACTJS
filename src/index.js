@@ -1,10 +1,12 @@
 import React from 'react'
 import ReactDOM  from 'react-dom/client'
 
+
 function Componente1() {
+    //Se deixar a div do React.Fragment vazio também irá funcionar
     return (
         <React.Fragment>
-            <div>
+            <div className='algumValor'>
                 <h1>Meu primeiro componente</h1>
                 <ul>
                     <li>
@@ -13,10 +15,11 @@ function Componente1() {
                 </ul>
             </div>
             <h2>Fim dos componentes</h2>
+            <span>Adicione um novo componente</span><br></br>
+            <input type='text' placeholder='Novo componente'></input>
         </React.Fragment>
     );
 }
-
 
 const Componente2 = () => {
     return React.createElement('div',
@@ -33,8 +36,7 @@ const Componente2 = () => {
      ));
 }
 
-
 //A renderização do componente acontece pelo ReactDOM
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-root.render(<Componente2 />);
+root.render(<Componente1 />);
