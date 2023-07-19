@@ -49,6 +49,10 @@ const Componente3 = () => {
         </div>
     )
 }
+
+const ComponenteBookMark = () => {
+    
+}
 //A renderização do componente acontece pelo ReactDOM
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
