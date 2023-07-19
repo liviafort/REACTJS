@@ -36,7 +36,20 @@ const Componente2 = () => {
      ));
 }
 
+const Pessoa = () => <h2>Lívia Maria</h2>;
+const Mensagem = () => {
+    return <p>Essa é a minha mensagem</p>
+}
+
+const Componente3 = () => {
+    return (
+        <div>
+            <Pessoa />
+            <Mensagem />
+        </div>
+    )
+}
 //A renderização do componente acontece pelo ReactDOM
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-root.render(<Componente1 />);
+root.render(<Componente3 />);
