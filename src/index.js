@@ -73,7 +73,15 @@ const Book = () => {
 const Image = () => <img src='https://images-na.ssl-images-amazon.com/images/I/81iqH8dpjuL._AC_UL600_SR600,400_.jpg'/>
 const Title = () => <h2>A Biblioteca da Meia-Noite</h2>
 const Author = () => {
-    return <h4>Matt Haig</h4>
+    //Existe esse jeito também:
+    //return <h4 style={{color: '#617d98', fontSize: '0.75rem', marginTop: '0.5rem'}}>Matt Haig</h4>
+    const inlineHeadingStyles = {
+        color: '#617d98', 
+        fontSize: '0.75rem', 
+        marginTop: '0.5rem'
+    }
+    return <h4 style={inlineHeadingStyles}>Matt Haig</h4>
+
 }
 
 
