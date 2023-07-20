@@ -60,15 +60,19 @@ const Booklist = () => {
     )
 }
 
+const title = 'A Biblioteca da Meia-Noite';
+const author = 'Matt Haig';
+
 const Book = () => {
     return (
         <article className='book'>
             <Image/>
-            <Title/>
-            <Author/>
+            <h2>{title}</h2>
+            <h4>{author}</h4>
         </article>
     )
 }
+
 
 const Image = () => <img src='https://images-na.ssl-images-amazon.com/images/I/81iqH8dpjuL._AC_UL600_SR600,400_.jpg'/>
 const Title = () => <h2>A Biblioteca da Meia-Noite</h2>
