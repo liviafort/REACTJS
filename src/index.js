@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM  from 'react-dom/client'
-
+import './index.css'
 
 function Componente1() {
     //Se deixar a div do React.Fragment vazio também irá funcionar
@@ -52,7 +52,7 @@ const Componente3 = () => {
 
 const Booklist = () => {
     return (
-        <section>
+        <section className='booklist'>
             <Book/>
             <Book/>
             <Book/>
@@ -62,7 +62,7 @@ const Booklist = () => {
 
 const Book = () => {
     return (
-        <article>
+        <article className='book'>
             <Image/>
             <Title/>
             <Author/>
