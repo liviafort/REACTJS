@@ -50,10 +50,34 @@ const Componente3 = () => {
     )
 }
 
-const ComponenteBookMark = () => {
-    
+const Booklist = () => {
+    return (
+        <section>
+            <Book/>
+            <Book/>
+            <Book/>
+        </section>
+    )
 }
+
+const Book = () => {
+    return (
+        <article>
+            <Image/>
+            <Title/>
+            <Author/>
+        </article>
+    )
+}
+
+const Image = () => <img src='https://images-na.ssl-images-amazon.com/images/I/81iqH8dpjuL._AC_UL600_SR600,400_.jpg'/>
+const Title = () => <h2>A Biblioteca da Meia-Noite</h2>
+const Author = () => {
+    return <h4>Matt Haig</h4>
+}
+
+
 //A renderização do componente acontece pelo ReactDOM
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-root.render(<Componente3 />);
+root.render(<Booklist />);
